@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap');
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  color: #222;
+  background-color: #f2f2f2;
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  padding: .8rem;
+}
+
+.navbar-nav {
+  padding-right: 20px;
+}
+
+.nav-link {
+  font-size: 1.1rem !important;
+}
+
+.carousel-inner img {
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 45%;
+  transform: translateY(-50%);
+  font-size-adjust: 100%;
+}
+
+.carousel-caption h1 {
+  font-size: 500%;
+  text-transform: uppercase;;
+  text-shadow: 1px 1px 10px #000;
+}
+
+.carousel-caption h3 {
+  font-size: 200%;
+  font-weight: 500;
+  text-shadow: 1px 1px 10px #000000;
+  padding-bottom: 1rem;
+}
+
+
+.padding {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.welcome {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.welcome hr {
+  width: 95%;
+}
+
+.block p {
+  margin-right: 2rem;
+  margin-left: 2rem;
+}
+
+.school {
+  margin-top: 1.5rem;
+}
+
+#special {
+  font-family: 'Abhaya Libre', serif;
+  font-size: 125%;
+}
+
+
+.fa-python {
+  color: #008000;
+}
+
+.fa-r-project {
+  color: #256bc0;
+}
+
+.fa-align-justify {
+  color: #3d75a4;
+}
+
+.fa-product-hunt {
+  color: #7F00FF
+}
+
+.fa-chart-bar {
+  color: #FFA500
+}
+
+.fa-code {
+  color: #e54d26;
+}
+
+.fa-css3 {
+  color: #2163af;
+}
+
+.fa-python, .fa-r-project, .fa-align-justify, .fa-code, .fa-css3, .fa-product-hunt, .fa-chart-bar {
+  font-size: 4em;
+  margin: 1rem;
+}
+
+.social a {
+  font-size: 4vw;
+  padding: 2.2rem;
+}
+
+.fa-facebook {
+  color: #3b5998;
+}
+
+.fa-instagram {
+  color: #517fa8;
+}
+
+.fa-github {
+  color: #211F1F;
+}
+
+.fa-linkedin-in {
+  color: #0e76a8;
+}
+
+.fa-kaggle:hover, .fa-linkedin-in:hover, .fa-github:hover, .fa-instagram:hover, .fa-facebook:hover {
+  color: #d5d5d5;
+}
+
+.fa-envelope {
+  font-size: 3.5em;
+  margin: 2rem;
+}
+
+.fa-phone {
+  font-size: 3.5em;
+  margin: 2rem;
+}
+
+footer {
+  background-color: #3f3f3f;
+  color: #d5d5d5;
+  padding-top: 2rem;
+}
+
+
+
+/*---- Media Queries ----*/
+@media (max-width: 992px) {
+  .carousel-caption h1 {
+    font-size: 440%;
+    text-transform: uppercase;;
+    text-shadow: 1px 1px 10px #000;
+  }
+/*  .social a {
+    font-size: 3rem;
+    padding: 2rem;
+  }*/
+}
+@media (max-width: 768px) {
+  .carousel-caption {
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+  }
+
+  .carousel-caption h1 {
+    font-size: 330%;
+    text-transform: uppercase;;
+    text-shadow: 1px 1px 10px #000;
+  }
+
+  .carousel-caption h3 {
+    font-size: 140%;
+    font-weight: 500;
+    text-shadow: 1px 1px 10px #000;
+    padding-bottom: 1rem;
+  }
+
+  .carousel-caption .btn {
+    font-size: 95%;
+  }
+
+  .social a {
+    font-size: 3em;
+    padding: 1rem;
+  }
+}
+@media (max-width: 576px) {
+  .carousel-caption {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+  }
+
+  .carousel-caption h1 {
+    font-size: 250%;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 10px #000;
+  }
+
+  .carousel-caption h3 {
+    font-size: 110%;
+    font-weight: 500;
+    text-shadow: 1px 1px 10px #000;
+    padding-bottom: 1rem;
+  }
+
+  .carousel-caption .btn {
+    font-size: 90%;
+    padding: 4px 8px;
+  }
+
+  .carousel-indicators {
+    display: none;
+  }
+  .social a {
+    font-size: 2.5em;
+    padding: 1rem;
+  }
+
+}
+
+/*0000 Firefox Bug Fix ----*/
+.carousel-item {
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+}
+/*---- Fixed Background Image ----*/
+figure {
+  position: relative;
+  width: 100%;
+  height: 60%;
+  margin: 0! important;
+}
+.fixed-wrap {
+  clip:
+  rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#tech #fixed{
+  background-image: url('img/tech.png');  
+}
+
+#education #fixed{
+  background-image: url('img/education.jpg');
+}
+
+#experience #fixed{
+  background-image: url('img/experience.jpg');
+}
+
+#projects #fixed{
+  background-image: url('img/projects.png');
+}
+
+#tech #fixed, #education #fixed, #experience #fixed, #projects #fixed{
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  wil-change: transform;
+}
+/*---- Bootstrap Padding Fix ----*/
+[class*="col-"] {
+  padding: 1rem;
+}
+
+
+
+
+
+/*
+Extra small (xs) decices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/
